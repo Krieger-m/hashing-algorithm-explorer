@@ -14,7 +14,7 @@ export default function Selector(props:{label:string}){
         <>
             <label>{label}</label>
             <select 
-                className={styles.textField} 
+                className={styles.selector} 
                 value={algorithm} 
                 onChange={(e) => setAlgorithm(e.target.value)}
             >

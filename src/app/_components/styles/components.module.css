@@ -8,7 +8,7 @@
   column-gap: 20;
 }
 
-.textField{
+.textField {
   margin-top: 5px;
   background-color: transparent;
   border: 1px solid grey;
@@ -16,21 +16,21 @@
   color: white;
   padding: 10;
   width: 55vw;
-  height: 50px;
+  height: 70px;
   font-size: 16;
+
 }
 
-.optionStyle{
+.optionStyle {
   color: white;
   background-color: #222222;
-  
 }
-.optionStyle:target{
+.optionStyle:target {
   background-color: #222222;
   color: black;
 }
 
-.selector{
+.selector {
   margin-top: 5px;
   background-color: transparent;
   border: 1px solid grey;
