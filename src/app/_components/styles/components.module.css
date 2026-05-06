@@ -1,0 +1,43 @@
+.header {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  column-gap: 20;
+}
+
+.textField{
+  margin-top: 5px;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 10px;
+  color: white;
+  padding: 10;
+  width: 55vw;
+  height: 50px;
+  font-size: 16;
+}
+
+.optionStyle{
+  color: white;
+  background-color: #222222;
+  
+}
+.optionStyle:target{
+  background-color: #222222;
+  color: black;
+}
+
+.selector{
+  margin-top: 5px;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 10px;
+  color: white;
+  padding: 10;
+  width: 55vw;
+  height: 50px;
+  font-size: 16;
+}
