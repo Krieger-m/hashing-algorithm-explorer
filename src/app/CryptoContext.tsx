@@ -1,6 +1,6 @@
 'use client';
 import { createContext, useState, ReactNode, useMemo } from "react";
-import { hashSha256, hashMd5, hashSha1 } from "./_utils/hash";
+import { hashSha256, hashMd5, hashSha1, hashHMAC } from "./_utils/hash";
 
 interface HashContextType {
   input: string;
@@ -31,6 +31,8 @@ export function HashContextProvider(props: HashContextProviderProps) {
         return hashMd5(input);
       case 'sha1':
         return hashSha1(input);
+      case 'hmac':
+        return hashHMAC(input);
       default:
         return 'Unknown algorithm';
     }

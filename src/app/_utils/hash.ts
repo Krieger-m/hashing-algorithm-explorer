@@ -6,8 +6,14 @@ import crypto from 'crypto';
  * @returns The hex-encoded hash string.
  */
  
-export function hashSha256(inp: string){
+export function hashSha256(inp: string ){
     const x =    crypto.createHash('sha256').update(inp).digest('hex');
+    console.log(x)
+    return x
+}
+
+export function hashHMAC(inp: string){
+    const x =    crypto.createHmac('sha512', 'test').update(inp).digest('hex',);
     console.log(x)
     return x
 }

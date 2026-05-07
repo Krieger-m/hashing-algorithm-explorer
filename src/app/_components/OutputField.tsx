@@ -17,8 +17,8 @@ export default function OutputField(props: OutputFieldProps) {
   return (
     <>
       <p>{label}</p>
-      <input 
-        type="text" 
+      <textarea 
+        // type="text" 
         className={styles.textField} 
         placeholder="your output" 
         value={output} 
