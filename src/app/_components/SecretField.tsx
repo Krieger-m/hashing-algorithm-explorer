@@ -8,12 +8,12 @@ interface SeedFieldProps {
   label: string;
 }
 
-export default function SeedField(props: SeedFieldProps) {
+export default function SecretField(props: SeedFieldProps) {
   const { label } = props;
   const context = useContext(HashContext);
 
   if (!context) return null;
-  const { seed, setSeed } = context;
+  const { secret: seed, setSecret: setSeed } = context;
 
   if (context.algorithm == "hmac")
     return (
@@ -21,7 +21,7 @@ export default function SeedField(props: SeedFieldProps) {
         <p>{label}</p>
         <input
           type="text"
-          placeholder="seed input"
+          placeholder="secret input"
           className={styles.textField}
           value={seed}
           onChange={(e) => setSeed(e.target.value)}

@@ -2,7 +2,7 @@
 import { HashContextProvider } from "../HashContext";
 import InputField from "./InputField";
 import OutputField from "./OutputField";
-import SeedField from "./SeedField";
+import SecretField from "./SecretField";
 import Selector from "./Selector";
 import { Spacing } from "./Spacing";
 
@@ -14,7 +14,7 @@ export default function HashForm() {
 
         <Spacing height={2} />
 
-        <SeedField label="Seed" />
+        <SecretField label="Secret" />
 
         <Selector label="Select algorithm" />
 

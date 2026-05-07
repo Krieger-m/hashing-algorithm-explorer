@@ -10,8 +10,8 @@ import {
 interface HashContextType {
   input: string;
   setInput: (val: string) => void;
-  seed: string;
-  setSeed: (val: string) => void;
+  secret: string;
+  setSecret: (val: string) => void;
   algorithm: string;
   setAlgorithm: (val: string) => void;
   output: string;
@@ -29,7 +29,7 @@ export function HashContextProvider(props: HashContextProviderProps) {
   const { children } = props;
 
   const [input, setInput] = useState("");
-  const [seed, setSeed] = useState("");
+  const [secret, setSecret] = useState("");
   const [algorithm, setAlgorithm] = useState("sha256");
 
   const output = useMemo(() => {
@@ -43,11 +43,11 @@ export function HashContextProvider(props: HashContextProviderProps) {
       case "sha1":
         return hashSha1(input);
       case "hmac":
-        return hashHMAC(input,seed);
+        return hashHMAC(input,secret);
       default:
         return "Unknown algorithm";
     }
-  }, [input, algorithm, seed]);
+  }, [input, algorithm, secret]);
 
   return (
     <HashContext.Provider
@@ -56,8 +56,8 @@ export function HashContextProvider(props: HashContextProviderProps) {
         setInput,
         algorithm,
         setAlgorithm,
-        seed,
-        setSeed,
+        secret,
+        setSecret,
         output,
       }}
     >
