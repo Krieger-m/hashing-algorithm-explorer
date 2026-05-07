@@ -7,10 +7,10 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         
-        <h1>Explore hash algorithms in real time</h1>
+        <h1>Explore Hash Algorithms in Real Time</h1>
         <Spacing height={2} />
-        <p>Type anything in the input field to generate a hash using the hash-algorithm selector below</p>
-        <p>This application runs on the client. this means no data is transfered to any server. everything stays where it belongs.</p>
+        <p>Enter text to compute its hash using the selected algorithm.<br/>
+All hashing happens client‑side. No network requests. No data leaves your browser.</p>
         <Spacing height={4} />
         <HashForm/>
         <Spacing height={2}/>
