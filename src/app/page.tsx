@@ -1,9 +1,6 @@
-import Image from "next/image";
 import styles from "./styles/page.module.css";
-import InputField from "./_components/InputField";
 import { Spacing } from "./_components/Spacing";
-import Selector from "./_components/Selector";
-import CryptoForm from "./_components/CryptoForm";
+import HashForm from "./_components/HashForm";
 
 export default function Home() {
   return (
@@ -12,9 +9,10 @@ export default function Home() {
         
         <h1>Explore hash algorithms in real time</h1>
         <Spacing height={2} />
-        <p>content will be here</p>
+        <p>Type anything in the input field to generate a hash using the hash-algorithm selector below</p>
+        <p>This application runs on the client. this means no data is transfered to any server. everything stays where it belongs.</p>
         <Spacing height={4} />
-        <CryptoForm/>
+        <HashForm/>
         <Spacing height={2}/>
       </main>
     </div>
