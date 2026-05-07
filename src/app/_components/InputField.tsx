@@ -1,7 +1,7 @@
 "use client";
 import styles from "./styles/components.module.css";
 import { useContext } from "react";
-import { HashContext } from "../CryptoContext";
+import { HashContext } from "../HashContext";
 
 interface InputFieldProps {
   label: string;
