@@ -8,7 +8,7 @@ import crypto, { BinaryToTextEncoding } from "crypto";
 
 export function hashSha256(inp: string, dig: BinaryToTextEncoding) {
   const x = crypto.createHash("sha256").update(inp).digest(dig);
-  console.log(x);
+  // console.log(x);
   return x;
 }
 
