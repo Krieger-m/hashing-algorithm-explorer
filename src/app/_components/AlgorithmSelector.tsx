@@ -11,7 +11,7 @@ export default function Selector(props: { label: string }) {
   const { algorithm, setAlgorithm } = context;
 
   return (
-    <>
+    <div className={styles.root}>
       <label>{label}</label>
       <select
         className={styles.selector}
@@ -20,6 +20,9 @@ export default function Selector(props: { label: string }) {
       >
         <option className={styles.optionStyle} value="sha256">
           sha256
+        </option>
+        <option className={styles.optionStyle} value="sha512">
+          sha512
         </option>
         <option className={styles.optionStyle} value="hmac">
           hmac
@@ -30,7 +33,10 @@ export default function Selector(props: { label: string }) {
         <option className={styles.optionStyle} value="sha1">
           sha1
         </option>
+        <option className={styles.optionStyle} value="hashs">
+          hashs
+        </option>
       </select>
-    </>
+    </div>
   );
 }
