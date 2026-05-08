@@ -33,9 +33,7 @@ export default function Selector(props: { label: string }) {
         <option className={styles.optionStyle} value="sha1">
           sha1
         </option>
-        <option className={styles.optionStyle} value="hashs">
-          hashs
-        </option>
+
       </select>
     </div>
   );
