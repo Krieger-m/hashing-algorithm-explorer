@@ -15,15 +15,15 @@ export default function OutputField(props: OutputFieldProps) {
   const { output } = context;
 
   return (
-    <>
+    <div className={styles.root}>
       <p>{label}</p>
       <textarea 
         // type="text" 
-        className={styles.textField} 
+        className={styles.outputField} 
         placeholder="your output" 
         value={output} 
         readOnly 
       />
-    </>
+    </div>
   );
 }

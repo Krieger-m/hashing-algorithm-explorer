@@ -15,7 +15,7 @@ export default function InputField(props: InputFieldProps) {
   const { input, setInput } = context;
 
   return (
-    <div>
+    <div className={styles.root}>
       <p>{label}</p>
       <input
         type="text"
