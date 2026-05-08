@@ -17,7 +17,7 @@ export default function SecretField(props: SeedFieldProps) {
 
   if (context.algorithm == "hmac")
     return (
-      <div>
+      <div className={styles.root}>
         <p>{label}</p>
         <input
           type="text"
