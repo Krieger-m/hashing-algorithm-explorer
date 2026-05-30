@@ -25,9 +25,7 @@ Based on the live explorer, the project currently includes:
 - **SHA‑1**  
 - **SHA‑256**  
 - **SHA‑512**  
-- **Keccak / SHA‑3**  
-- **Blake2**  
-- **RIPEMD‑160**  
+- **HMAC**  
 - …and more as the project evolves
 
 Each algorithm displays:
