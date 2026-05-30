@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔐 Hash Algorithm Explorer
 
-## Getting Started
+An interactive tool for exploring and understanding how different **hashing algorithms** transform input data into fixed‑size digests.  
+This project visualizes each algorithm step‑by‑step, making it easier to learn, compare, and experiment with hashing functions.
 
-First, run the development server:
+## 🌟 Overview
+
+Hash functions are fundamental to cryptography, data integrity, password storage, and countless other areas.  
+This explorer provides a hands‑on way to:
+
+- See how input text is processed  
+- Inspect intermediate states  
+- Compare algorithms side‑by‑side  
+- Understand why small input changes produce drastically different outputs  
+
+It’s designed as an educational and experimental tool — simple, visual, and intuitive.
+
+## 🔧 Supported Algorithms
+
+Based on the live explorer, the project currently includes:
+
+- **MD5**  
+- **SHA‑1**  
+- **SHA‑256**  
+- **SHA‑512**  
+- **Keccak / SHA‑3**  
+- **Blake2**  
+- **RIPEMD‑160**  
+- …and more as the project evolves
+
+Each algorithm displays:
+
+- The final hash  
+- Internal processing steps (when applicable)  
+- Binary/hex transformations  
+- Bitwise operations  
+- Message padding and block processing  
+
+## 🧱 Tech Stack
+
+- **Next.js**  
+- **TypeScript**  
+- **React**  
+- **Custom hashing visualizers**  
+- **Modular algorithm definitions**  
+
+## 📁 Project Structure
+```
+public/
+  src/
+    app/
+      _components/
+        AlgorithmSelector.tsx
+        DigestSelector.tsx
+        HashForm.tsx
+        Header.tsx
+        InputField.tsx
+        OutputField.tsx
+        SecretField.tsx
+        Spacing.tsx
+      _utils/
+        hash-functions.ts
+      styles/
+      HashContext.tsx
+      icon.png
+      layout.tsx
+      page.tsx
+.gitignore
+AGENTS.md
+CLAUDE.md
+README.md
+eslint.config.mjs
+next.config.ts
+package-lock.json
+package.json
+tsconfig.json
+```
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Krieger-m/hashing-algorithm-explorer
+cd hashing-algorithm-explorer
+```
+Install dependencies:
+
+```bash
+npm install
+```
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Then open:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+http://localhost:3000
+```
+## 🧩 How It Works
+Each algorithm is implemented as a standalone module inside src/app/algorithms/.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A typical algorithm definition includes:
+- Message preprocessing
+- Padding
+- Block processing
+- Round functions
+- Bitwise operations
+- Final digest formatting
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The UI components then visualize these steps in a structured, readable format.
 
-## Learn More
+## 📦 Deployment
+This project runs in any Node.js environment.
 
-To learn more about Next.js, take a look at the following resources:
+Build and start:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm start
+```
+## 🎯 Goals
+Make cryptographic hashing more approachable
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Provide a learning tool for students and developers
 
-## Deploy on Vercel
+Offer a playground for experimenting with input changes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+MIT — feel free to explore, modify, and extend.
+  
