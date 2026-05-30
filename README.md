@@ -93,7 +93,7 @@ npm run dev
 Then open:
 
 ```
-http://localhost:3000
+http://localhost:3030
 ```
 ## 🧩 How It Works
 Each algorithm is implemented as a standalone module inside src/app/algorithms/.
