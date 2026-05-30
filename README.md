@@ -3,6 +3,8 @@
 An interactive tool for exploring and understanding how different **hashing algorithms** transform input data into fixed‑size digests.  
 This project visualizes each algorithm step‑by‑step, making it easier to learn, compare, and experiment with hashing functions.
 
+live version available here: [Hash Algorithm Explorer](https://hash.mk-dev.org/)
+  
 ## 🌟 Overview
 
 Hash functions are fundamental to cryptography, data integrity, password storage, and countless other areas.  
