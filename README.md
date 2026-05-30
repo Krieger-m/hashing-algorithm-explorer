@@ -95,18 +95,6 @@ Then open:
 ```
 http://localhost:3030
 ```
-## 🧩 How It Works
-Each algorithm is implemented as a standalone module inside src/app/algorithms/.
-
-A typical algorithm definition includes:
-- Message preprocessing
-- Padding
-- Block processing
-- Round functions
-- Bitwise operations
-- Final digest formatting
-
-The UI components then visualize these steps in a structured, readable format.
 
 ## 📦 Deployment
 This project runs in any Node.js environment.
