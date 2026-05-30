@@ -31,17 +31,13 @@ Based on the live explorer, the project currently includes:
 Each algorithm displays:
 
 - The final hash  
-- Internal processing steps (when applicable)  
 - Binary/hex transformations  
-- Bitwise operations  
-- Message padding and block processing  
 
 ## 🧱 Tech Stack
 
 - **Next.js**  
 - **TypeScript**  
 - **React**  
-- **Custom hashing visualizers**  
 - **Modular algorithm definitions**  
 
 ## 📁 Project Structure
